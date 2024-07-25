@@ -26,7 +26,7 @@ _merge = "none"
   # email does still work but is deprecated.
   # use [params.contact.email] instead.
   #email = "john.doe@example.com"
-  description = "Landing Page"
+  description = "Paulo Roger's Page"
   bio = "Consultant  \nDevOps"
   avatar = "img/avatar.jpg"
   favicon = "img/favicon.webp"
