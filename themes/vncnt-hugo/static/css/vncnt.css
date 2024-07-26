@@ -88,6 +88,17 @@ p.reset-margin {
   margin: auto;
 }
 
+.qrcode {
+	width: 20rem;
+	border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; 
+  max-width: 60%;
+  box-sizing: border-box;
+  display: block;
+  margin: auto;
+}
+
 .autocenter {
   text-align: center;
 }
@@ -116,6 +127,7 @@ p.reset-margin {
     
   .grid-container.fivetoseven {
     grid-template-columns: 5fr 7fr;
+    grid-template-areas: '.      .     ' 'myArea myArea';
   }
   
   .item {
@@ -141,6 +153,12 @@ p.reset-margin {
     text-align: left;
     padding: 0 0;
   }
+
+  .qrcodeitem {
+    padding: 20px 0;
+    margin: 10px auto;
+    grid-area: myArea;
+  }  
 } 
 
 /* Larger than phablet */
