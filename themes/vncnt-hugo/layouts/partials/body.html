@@ -35,7 +35,8 @@
       </div>
       <div class="item qrcodeitem" aria-label="qrcode">
         <section id="qrcode">
-          <img class="qrcode" src="{{ .Site.Params.qrcode }}" alt="{{ path.Base .Site.Params.qrcode }}">
+          <a href="{{ .Site.Params.vcard | safeURL }}"><img class="qrcode" src="{{ .Site.Params.qrcode }}" alt="{{ path.Base .Site.Params.qrcode }}"></a>
+          <small><p style="padding-top: 1px;">vCard (click to download)</p></small>
         </section>
       </div>
     </div>

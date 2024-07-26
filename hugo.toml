@@ -30,6 +30,7 @@ _merge = "none"
   bio = "Consultant  \nDevOps"
   avatar = "img/avatar.jpg"
   qrcode = "img/vCard.png"
+  vcard = "pauloroger.vcf"
   favicon = "img/favicon.webp"
   error404 = "There is no such page."
 
