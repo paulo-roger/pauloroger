@@ -1,4 +1,8 @@
-<link rel="stylesheet" href="{{ "/css/fonts.css" | absURL }}" type="text/css">
-  <link rel="stylesheet" href="{{ "/css/normalize.css" | absURL }}">
-  <link rel="stylesheet" href="{{ "/css/all.min.css" | absURL }}">
-  <link rel="stylesheet" href="{{ "/css/vncnt.css" | absURL }}">
+{{ $fonts := resources.Get "css/fonts.css" | minify | fingerprint | resources.PostProcess }}
+{{ $normalize := resources.Get "css/normalize.css" | minify | fingerprint | resources.PostProcess }}
+{{ $all := resources.Get "css/all.min.css" | minify | fingerprint | resources.PostProcess }}
+{{ $vncnt := resources.Get "css/vncnt.css" | minify | fingerprint | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $fonts.RelPermalink }}" type="text/css">
+  <link rel="stylesheet" href="{{ $normalize.RelPermalink }}">
+  <link rel="stylesheet" href="{{ $all.RelPermalink }}">
+  <link rel="stylesheet" href="{{ $vncnt.RelPermalink }}">
