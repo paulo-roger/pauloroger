@@ -49,7 +49,7 @@ _merge = "none"
     #   link = "xmpp:me@pauloroger.dev"
     [params.contact.mastodon]
       style = "fab"
-      link = "https://mastodon.online/@pauloroger_"
+      link = "https://hachyderm.io/@pauloroger"
       rel-me = true
     [params.contact.resume]
       icon = "address-card"
